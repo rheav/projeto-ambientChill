@@ -1,5 +1,5 @@
 import Logo from "../assets/img/logo.png";
-import { SidebarItem } from "../components/sidebarItem";
+import { SidebarItem } from "../components/SidebarItem";
 import { IconWindy } from "../weatherIcons/IconWindy";
 import { IconThunderstorm } from "../weatherIcons/IconThunderstorm";
 import { IconBeach } from "../weatherIcons/IconBeach";
@@ -8,7 +8,7 @@ import { IconMountain } from "../weatherIcons/IconMountain";
 
 export function Sidebar() {
 	return (
-		<aside className="bg-slate-100 col-span-1/2 flex flex-col items-center bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 w-full">
+		<aside className=" border-r-slate-200/40 shadow-blue-300/70 shadow-lg border-r-2 min-w-[300px] bg-blue-200 col-span-1/2 flex flex-col items-center bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 w-full">
 			<img
 				src={Logo}
 				alt=""
