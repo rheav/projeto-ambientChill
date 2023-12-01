@@ -15,14 +15,14 @@ export function Sidebar() {
 				width={230}
 				className="mt-8"
 			/>
-			<div className="mt-12 w-full flex flex-col items-center gap-y-2">
+			<div className="flex flex-col items-center w-full mt-12 gap-y-2">
 				<SidebarItem>
 					<IconThunderstorm
 						iconHeight={70}
 						iconWidth={70}
 						iconStyles={"text-white col-span-1"}
 					/>
-					<p className="col-span-2">Comfy Thunderstorm</p>
+					<p className="col-span-2">comfy thunderstorm</p>
 				</SidebarItem>
 				<SidebarItem>
 					<IconWindy
@@ -30,7 +30,7 @@ export function Sidebar() {
 						iconWidth={70}
 						iconStyles={"text-white col-span-1"}
 					/>
-					<p className="col-span-2"> Windy Greenfield</p>
+					<p className="col-span-2"> windy greenfield</p>
 				</SidebarItem>
 				<SidebarItem>
 					<IconBeach
@@ -38,7 +38,7 @@ export function Sidebar() {
 						iconWidth={70}
 						iconStyles={"text-white col-span-1"}
 					/>
-					<p className="col-span-2"> Calm Beach</p>
+					<p className="col-span-2"> calm beach</p>
 				</SidebarItem>
 				<SidebarItem>
 					<IconLagoon
@@ -46,7 +46,7 @@ export function Sidebar() {
 						iconWidth={70}
 						iconStyles={"text-white col-span-1"}
 					/>
-					<p className="col-span-2"> Tranquil Lagoon</p>
+					<p className="col-span-2"> tranquil lagoon</p>
 				</SidebarItem>
 				<SidebarItem>
 					<IconMountain
@@ -54,7 +54,7 @@ export function Sidebar() {
 						iconWidth={70}
 						iconStyles={"text-white col-span-1"}
 					/>
-					<p className="col-span-2"> Moonlighted Mountain</p>
+					<p className="col-span-2"> moonlighted mountain</p>
 				</SidebarItem>
 			</div>
 		</aside>

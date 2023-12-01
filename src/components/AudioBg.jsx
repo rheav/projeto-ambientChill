@@ -1,10 +1,10 @@
 import { forwardRef } from "react";
 
-export const AudioBg = forwardRef(({ audioSrc }, ref) => {
+export const AudioBg = forwardRef(({ audioSource }, ref) => {
 	return (
 		<audio
 			ref={ref}
-			src={audioSrc}
+			src={audioSource}
 			loop
 		/>
 	);
