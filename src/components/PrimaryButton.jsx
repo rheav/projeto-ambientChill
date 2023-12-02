@@ -10,7 +10,7 @@ export function PrimaryButton({ fireEvent }) {
 
 	return (
 		<button
-			className="z-10 flex items-center justify-center w-1/5 col-span-3 px-12 py-6 mb-16 text-2xl font-thin tracking-wider text-white transition duration-300 bg-blue-300 border rounded-lg shadow-md hover:bg-transparent gap-x-6 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 border-blue-300/70 shadow-blue-300/70 hover:shadow-lg hover:shadow-blue-300/90 hover:-translate-y-2"
+			className="z-10 flex items-center justify-center col-span-3 px-10 py-4 mb-16 text-lg font-thin tracking-wider text-white transition duration-300 bg-blue-300 border rounded-lg shadow-md hover:bg-transparent gap-x-6 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 border-blue-300/70 shadow-blue-300/70 hover:shadow-lg hover:shadow-blue-300/90 hover:-translate-y-2"
 			onClick={() => {
 				fireEvent();
 				handleIsMuted();

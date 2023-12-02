@@ -5,56 +5,63 @@ import { IconThunderstorm } from "../weatherIcons/IconThunderstorm";
 import { IconBeach } from "../weatherIcons/IconBeach";
 import { IconLagoon } from "./../weatherIcons/IconLagoon";
 import { IconMountain } from "../weatherIcons/IconMountain";
+import { IconCaption } from "../components/IconCaption";
 
-export function Sidebar() {
+import comfyThunderstorm from "../assets/video/comfyThunderstorm.mp4";
+import windyGreenfield from "../assets/video/windyGreenfield.mp4";
+
+export function Sidebar({ handleBackgroundVideo }) {
 	return (
-		<aside className=" border-r-slate-200/40 shadow-blue-300/70 shadow-lg border-r-2 min-w-[300px] bg-blue-200 col-span-1/2 flex flex-col items-center bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 w-full">
+		<aside className="z-20 flex flex-col items-center w-full col-span-1 bg-blue-200 border-r-2 shadow-lg border-r-slate-200/40 shadow-blue-300/70 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30">
 			<img
 				src={Logo}
 				alt=""
-				width={230}
+				width={170}
 				className="mt-8"
 			/>
-			<div className="flex flex-col items-center w-full mt-12 gap-y-2">
-				<SidebarItem>
+			<div className="flex flex-col items-center w-full mt-8 gap-y-2">
+				<SidebarItem
+					linkedVideo={comfyThunderstorm}
+					handleBackgroundVideo={handleBackgroundVideo}
+				>
 					<IconThunderstorm
-						iconHeight={70}
-						iconWidth={70}
-						iconStyles={"text-white col-span-1"}
+						iconHeight={30}
+						iconWidth={30}
+						iconStyles={"text-white col-span-1 justify-self-center"}
 					/>
-					<p className="col-span-2">comfy thunderstorm</p>
+					<IconCaption>comfy thunderstorm</IconCaption>
 				</SidebarItem>
-				<SidebarItem>
+				<SidebarItem linkedVideo={windyGreenfield}>
 					<IconWindy
-						iconHeight={70}
-						iconWidth={70}
-						iconStyles={"text-white col-span-1"}
+						iconHeight={30}
+						iconWidth={30}
+						iconStyles={"text-white col-span-1 justify-self-center"}
 					/>
-					<p className="col-span-2"> windy greenfield</p>
+					<IconCaption>windy greenfield</IconCaption>
 				</SidebarItem>
 				<SidebarItem>
 					<IconBeach
-						iconHeight={70}
-						iconWidth={70}
-						iconStyles={"text-white col-span-1"}
+						iconHeight={30}
+						iconWidth={30}
+						iconStyles={"text-white col-span-1 justify-self-center"}
 					/>
-					<p className="col-span-2"> calm beach</p>
+					<IconCaption>calm beach</IconCaption>
 				</SidebarItem>
 				<SidebarItem>
 					<IconLagoon
-						iconHeight={70}
-						iconWidth={70}
-						iconStyles={"text-white col-span-1"}
+						iconHeight={30}
+						iconWidth={30}
+						iconStyles={"text-white col-span-1 justify-self-center"}
 					/>
-					<p className="col-span-2"> tranquil lagoon</p>
+					<IconCaption>tranquil lagoon</IconCaption>
 				</SidebarItem>
 				<SidebarItem>
 					<IconMountain
-						iconHeight={70}
-						iconWidth={70}
-						iconStyles={"text-white col-span-1"}
+						iconHeight={30}
+						iconWidth={30}
+						iconStyles={"text-white col-span-1 justify-self-center"}
 					/>
-					<p className="col-span-2"> moonlighted mountain</p>
+					<IconCaption>moonlighted mountain</IconCaption>
 				</SidebarItem>
 			</div>
 		</aside>
